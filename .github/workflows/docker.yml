@@ -15,8 +15,8 @@ jobs:
         include:
           - arch: amd64
             name: amd64
-          - arch: arm64
-            name: arm64
+          # - arch: arm64
+          #   name: arm64
 
     steps:
       - name: Checkout base
