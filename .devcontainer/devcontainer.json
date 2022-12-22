@@ -1,0 +1,37 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.195.0/containers/java
+{
+    "name": "Entware Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "HTTP_PROXY": "",
+            "HTTPS_PROXY": "",
+            "NO_PROXY": ""
+        }
+    },
+    // Configure tool-specific properties.
+    "customizations": {
+        // Configure properties specific to VS Code.
+        "vscode": {
+            // Set *default* container specific settings.json values on container create.
+            "settings": {
+            },
+            // Add the IDs of extensions you want installed when the container is created.
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack",
+                "LeoJhonSong.ccpp-extension-pack",
+                "ms-vscode.vs-keybindings",
+                "Kr4is.cpptools-extension-pack",
+                "akiramiyakoda.cppincludeguard",
+                "yzhang.markdown-all-in-one"
+            ]
+        }
+    }
+    // Use 'forwardPorts' to make a list of ports inside the container available locally.
+    // "forwardPorts": [],
+    // Use 'postCreateCommand' to run commands after the container is created.
+    // "postCreateCommand": "java -version",
+    // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+    // "remoteUser": "vscode"
+}
